@@ -1,1 +1,1 @@
-### Just playing with React!
+### Just learning and playing with React!
