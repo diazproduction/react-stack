@@ -1,11 +1,17 @@
 import React from 'react';
 import MessagesList from './MessagesList.jsx';
+import AppBar from 'material-ui/lib/app-bar';
 
 var App = React.createClass({
 
   render() {
     return(
-      <MessagesList />
+      <div>
+        <AppBar
+          title="Let's Start!"
+        />
+        <MessagesList />
+      </div>
     );
   }
 });
