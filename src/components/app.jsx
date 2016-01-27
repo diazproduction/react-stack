@@ -13,7 +13,7 @@ var App = React.createClass({
   render() {
     var messageNodes = this.state.messages.map((messages) => {
       return(
-        <div style={{color: 'black'}}>{messages}</div>
+        <div>{messages}</div>
       );
     });
 

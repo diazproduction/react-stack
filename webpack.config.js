@@ -36,7 +36,6 @@ module.exports = {
           presets: ['es2015', 'stage-0', 'react']
         }*/
       },
-
       {
         test: /\.scss$/,
         include: path.join(__dirname, 'src'),
