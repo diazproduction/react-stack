@@ -1,6 +1,7 @@
 import React from 'react';
 import MessagesList from './MessagesList.jsx';
 import ChannelsList from './ChannelsList.jsx';
+import MessageBox from './MessageBox.jsx';
 import AppBar from 'material-ui/lib/app-bar';
 
 import ThemeManager from 'material-ui/lib/styles/theme-manager';
@@ -28,6 +29,7 @@ var App = React.createClass({
           <ChannelsList />
           <MessagesList />
         </div>
+        <MessageBox />
       </div>
     );
   }
