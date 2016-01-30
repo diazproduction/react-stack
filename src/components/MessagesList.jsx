@@ -1,5 +1,7 @@
 import React from 'react';
-import Message from './Message.jsx'
+import Message from './Message.jsx';
+import Card from 'material-ui/lib/card/card';
+import List from 'material-ui/lib/lists/list';
 
 var MessagesList = React.createClass({
   getInitialState() {
@@ -19,7 +21,9 @@ var MessagesList = React.createClass({
     });
 
     return(
-      <div>{messageNodes}</div>
+      <Card>
+        <List>{messageNodes}</List>
+      </Card>
     );
   }
 });
