@@ -1,5 +1,6 @@
 import React from 'react';
 import Firebase from 'firebase';
+import {keys, map, clone} from 'lodash';
 
 import Message from './Message.jsx';
 import Card from 'material-ui/lib/card/card';
@@ -15,7 +16,14 @@ var MessagesList = React.createClass({
   componentWillMount() {
     this.firebaseRef = new Firebase("https://glaring-heat-810.firebaseio.com/messages");
     this.firebaseRef.once("value", (dataSnapshot)=> {
-      var messages = dataSnapshot.val();
+      var messagesVal = dataSnapshot.val();
+      var messages = _(messagesVal)
+        .keys()
+        .map((messagesKey) => {
+          var cloned = _.clone(messagesVal[messagesKey]);
+          cloned.key = messagesKey;
+          return cloned;
+        }).value();
       this.setState({
         messages: messages
       });
