@@ -21,7 +21,7 @@ var ChannelsList = React.createClass({
     });
 
     return(
-      <Card>
+      <Card className="c-channels-list">
         <List>{channelNodes}</List>
       </Card>
     );

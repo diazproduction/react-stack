@@ -21,7 +21,7 @@ var MessagesList = React.createClass({
     });
 
     return(
-      <Card>
+      <Card className="c-messages-list">
         <List>{messageNodes}</List>
       </Card>
     );

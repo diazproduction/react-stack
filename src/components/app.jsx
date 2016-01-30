@@ -24,8 +24,10 @@ var App = React.createClass({
         <AppBar
           title="Let's Start!"
         />
-        <ChannelsList />
-        <MessagesList />
+        <div className="o-main-layout">
+          <ChannelsList />
+          <MessagesList />
+        </div>
       </div>
     );
   }

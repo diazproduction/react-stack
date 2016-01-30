@@ -3,3 +3,19 @@ $color: blue;
 * {
   margin: 0;
 }
+
+.o-main-layout {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1200px;
+  width: 100%;
+  margin: 30px auto 30px;
+}
+
+.c-messages-list {
+  flex-grow: 2;
+}
+
+.c-channels-list {
+  flex-grow: 1;
+}
